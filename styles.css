@@ -1,0 +1,1838 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;            /*no tinc*/
+}
+
+body{
+    background-color: #fff;
+    font-family: verdana;
+}
+
+body::-webkit-scrollbar{                    
+    width: 7px;                    /*17px = default*/
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #000;             /*background-color: rgba(0, 0, 0, 0.233);*/
+}
+
+/*************************************************************************************************************************************************************************************************************/
+/*****************************************************************************************[ I N D E X ]*******************************************************************************************************/
+/*************************************************************************************************************************************************************************************************************/
+
+nav{
+    height: 80px;
+    position: relative;
+    background-color: rgb(237, 237, 237);
+    z-index: 110;
+}
+
+.naav{
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    line-height: 80px;
+    z-index: 100;
+    background-color: rgb(237, 237, 237);
+}
+
+.naav_container{
+    margin-left: 30px;
+    margin-top: 10px;                                                                                                                                                                    /*Esquerra*/
+    z-index: 100;
+    cursor: pointer;
+}
+
+.naav_container h2{
+    color: #7c7c7c;
+    font-weight: 500;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.naav_container h2:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+.naav_container h2 span{
+    color: #0590ec;
+    font-weight: 700;
+}
+
+/*.links{
+    margin-right: 30px;                                                                                                                                                                    
+}*/
+
+.links .link{
+    display: inline-block;
+}
+
+/*.nocompres{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    top: 40px;
+    left: 1220px;
+}*/
+
+.links .link a{
+    text-decoration: none;
+    color: #7c7c7c;         
+    font-size: 20px;
+    margin: 0 20px;
+    transition: .3s;
+}
+
+.links .link .nav_active{                       /*Mostrar on estem en cada lloc ''active''*/
+    text-decoration: none;
+    color: #000000;         
+    font-size: 20px;
+    margin: 0 20px;
+    transition: .3s;
+}
+
+.links .link a:hover{
+    color: #000
+    /*border-bottom: 1px solid #000;*/
+}
+
+.toggle{
+    color: #7c7c7c; 
+    margin-left: 92px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+/*********************/
+
+.user_cart{
+    font-size: 25px;
+    color: #7c7c7c;
+    margin-right: 30px;
+    color: #7c7c7c;
+}
+
+.bi-bag-fill{
+    color: #7c7c7c;
+}
+
+.bi-bag-fill:hover{
+    color: #000;
+}
+
+.bi-globe2{
+    color: #7c7c7c;
+}
+
+.bi-globe2:hover{
+    color: #000;
+}
+
+.bi-person-fill{
+    color: #7c7c7c;
+}
+
+.bi-person-fill:hover{
+    color: #000;
+}
+
+/*********************/
+
+.publi{
+    background-color: #000;
+    height: 60px;
+    width: 100%;
+    float: left;
+    position: relative;
+    opacity:1;
+}
+
+.publi_dins{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+.groc{
+    color: gray;
+}
+
+.publi p{
+    color: #fff;
+}
+
+.hide{
+    border: none;
+    padding: .5rem 1rem;
+    background: #d90e52;
+    color: white;
+    cursor: pointer;
+    justify-content: right;
+    margin: 5px;
+    display: flex;
+    position: absolute;
+    padding: 3px 5px 2px 5px;
+}
+
+.publi_hide{                                                             /*fer que marxi*/
+    display: none;                                                       /*amb opacity: 0; també mola pero no surt el cuadre*/
+}
+
+/*****************************************************************************************************************************************************************************************************************/
+/*****************************************************************************************************************************************************************************************************************/
+
+.apartats_01{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.apartats_75_01{
+    width: 1684px;             /*Realment es 75%*/
+    height: auto;           /**/
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-wrap: wrap;            /*es centra be*/
+    align-items: center;
+    justify-content: center;
+}
+
+.apartats_base{
+    position: relative;
+    margin: 10px;
+    float: left;
+    width: 400px;
+    height: 450px;
+    transition: 1s linear;
+}
+
+.apartats_base_foto{
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 400px;
+    background-color: #a0b4c2;
+}
+
+/*.apartats_base_foto:hover{
+    padding: 10px 0px 0px 0px;
+}*/
+
+.apartats_base_text{
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 50px;
+}
+
+.apartats_base_text h3{
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;       /*Treure grosor*/
+}
+
+/****************/
+
+.apartats_base_75_nove{
+    width: 1660px;             /*Realment es 75%*/
+    height: auto;           /**/
+    display: flex;
+    flex-wrap: wrap;            /*es centra be*/
+    align-items: center;
+    justify-content: center;
+}
+
+.centredcentre_75{                                                                                  /*Una mica pupurri de 75 amb 75 .. pero funciona*/
+    width: 100%;             /*Realment es 75%*/
+    height: auto;           /**/
+    display: flex;
+    flex-wrap: wrap;            /*es centra be*/
+    align-items: center;
+    justify-content: center;
+}
+
+.apartats_base_text_nove{
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 50px;
+}
+
+.apartats_base_text_nove h3{
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;       /*Treure grosor*/
+}
+
+.responsiveimagtge_01{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    float: left;
+    object-fit: cover;                                                                                          /*Molt top*/
+}
+
+@media screen and (max-width: 1768px){ 
+    .apartats_75_01{
+        width: 844px;
+    }
+}
+
+@media screen and (max-width: 950px){ 
+    .apartats_75_01{
+        width: 430px;
+        justify-content: center;
+    }
+}
+
+/******************/
+
+.apartat_novetats{
+    position: relative;
+    float: left;
+    width: 1660px;          /*exactes*/
+    height: 400px;
+    background-color: #966e6e;
+}
+
+@media screen and (max-width: 1768px){ 
+    .apartat_novetats{
+        width: 820px;           /*exactes*/
+    }
+    .apartats_base_75_nove{
+    width: 820px;
+    }
+}
+
+@media screen and (max-width: 950px){ 
+    .apartat_novetats{
+        width: 400px;
+    }
+}
+
+/******************/
+
+.apartats_objectes{
+    position: relative;
+    margin: 10px;
+    float: left;
+    width: 400px;
+    height: 400px;
+    transition: 1s linear;
+}  
+
+.apartats_objectes_parti_1{
+    background-color: rgb(237, 237, 237);
+    position: relative;
+    display: flex;
+    float: left;
+    width: 195px;
+    height: 195px;
+    margin: 0px 5px 5px 0px;            /*dal - dreta - baix - esquerra*/
+}
+
+.apartats_objectes_parti_2{
+    background-color: rgb(237, 237, 237);
+    position: relative;
+    display: flex;
+    float: left;
+    width: 195px;
+    height: 195px;
+    margin: 0px 0px 5px 5px;
+}
+
+.apartats_objectes_parti_3{
+    background-color: rgb(237, 237, 237);
+    position: relative;
+    display: flex;
+    float: left;
+    width: 195px;
+    height: 195px;
+    margin: 5px 5px 0px 0px;
+}
+
+.apartats_objectes_parti_4{
+    background-color: rgb(237, 237, 237);
+    position: relative;
+    display: flex;
+    float: left;
+    width: 195px;
+    height: 195px;
+    margin: 5px 0px 0px 5px;
+}
+
+/*************************************************************************************************************************************************************************************************************/
+/*************************************************************************************[ F O O T E R ]*********************************************************************************************************/
+/*************************************************************************************************************************************************************************************************************/
+
+/*Tots els footers son iguals*/
+
+footer{
+    width: 100%;
+    float: left;
+    background-color: #000;
+    margin-top: 100px;
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.container{
+	max-width: 100%;
+	margin: auto;
+    margin-left: 20px;
+}
+
+.divisio{                           /*Fer la particiò*/
+    width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.caixafoot{
+   width: 20%;
+   padding: 0 15px;
+}
+
+.caixafoot h4{
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.caixafoot ul li{
+	margin-bottom: 10px;            /*sEPARACIÓ ENTRE CADA ''a''*/
+}
+
+.caixafoot ul li a{
+	font-size: 16px;                /*text-transform: capitalize; -> 1a lletra*/
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	transition: 0.3s linear;
+}
+
+.caixafoot ul li a:hover{              /*Moviment de ''a''*/
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.caixafoot .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.caixafoot .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*@media(max-width: 767px){
+    .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col{
+    width: 100%;
+    }
+}*/
+
+/*****************************************************************************************************************************************************************************************************************/
+/*****************************************************************************************************************************************************************************************************************/
+
+@media screen and (max-width: 950px){
+    .toggle {
+        display: inline-block;
+    }
+    .links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: rgb(237, 237, 237);
+        text-align: center;
+        overflow: hidden;
+        height: 690px;
+        width: 100%;
+        z-index: 100;
+        top: -110vh;
+        transition: 2.5s;
+    }
+    .link{
+        height: 50px;
+    }
+
+    .active {
+        top: 80px;
+    }
+
+    .toggle{
+        color: #7c7c7c;
+    }
+
+    .naav_container h2{
+        color: #7c7c7c;
+    }
+    .naav_container{
+        margin-left: 0px;
+    }
+}
+
+
+/*************************************************************************************************************************************************************************************************************/
+/*******************************************************************************************[ H O M E ]*******************************************************************************************************/
+/*************************************************************************************************************************************************************************************************************/
+
+.botiga_informacio{
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    /*border: 1px solid red;*/
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.buscador_botiga{
+    float: left;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+    width: 500px;
+    margin-top: 50px;
+    transition: 1s linear;
+}
+
+/************************************************************/
+
+.bdajust{
+        width: 100%;
+        height: auto;
+    float: left;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;                    /*Necesita aixó per centrar*/                              
+    align-items: center;
+}
+
+.botiga_xyz{
+    /*border: 1px solid blue;*/
+        height: auto;
+        width: 75%;
+    margin-top: 20px;
+    transition: linear 1s;
+    float: left;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;                    /*Necesita aixó per centrar*/                              
+    align-items: center;
+}
+
+.botiga_buscador{
+    position: relative;
+        width: 300px;
+    /*border: 1px solid green;*/ 
+    float: left;
+    transition: linear 4s;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.botiga_buscador{
+    width: 250px;
+    top: -470px;                    /*Un apanyo tonto == :0 @media*/
+}
+
+.botiga_buscador .linkcs .linkc{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.botiga_buscador .linkcs .linkc a{
+    text-decoration: none;
+    color: #7c7c7c;         
+    font-size: 15px;
+    margin: 0 40px;
+    transition: .3s;
+    float: left;
+}
+
+.botiga_buscador .linkcs .linkc a:hover{                /*Moviment*/
+    padding-left: 8px;
+    color: #000
+    /*border-bottom: 1px solid #000;*/
+}
+
+.botiga_objc{
+    position: relative;
+        width: 967px;
+        height: auto;
+    /*border: 1px solid red;*/
+    float: left;
+    transition: linear 1.5s;
+}
+
+.cards_botiga2{
+    /*border: 1px solid pink;*/    
+        width: 100%;                                                                                                    /*ERROR DE SCROLL! POSAR 95%*/
+        height: auto;
+    position: relative;
+    display: flex;          /*En linea*/
+    align-items: center;            /*Centrar items*/
+    transition: 1.5s linear;
+    flex-wrap: wrap;
+}
+
+.card_object{                   /*Imatges de cada card*/
+    position: relative;
+    display: flex;
+    width: 360px;
+    height: 360px;
+    margin: 10px;
+    background-color: rgb(237, 237, 237);
+}
+
+.card_tenda2{
+    position: relative;
+    text-decoration: none;
+    min-width: 300px;                                       /*min -> sinó dona error en les .card*/
+    min-height: 400px;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+    margin-top: 20px;                                                                                                       /*per a totes les card*/
+    border-radius: 15px;
+    border: 1px solid #fff;
+}
+
+/*.card_tenda2:hover{
+    border: 1px solid rgb(181, 181, 181);
+}*/
+
+.text_shop_notlink{                     /*fer que es tregui el linke*/
+    text-decoration: none;
+    color: #000;
+}
+
+.card_tenda2 h5{
+    font-size: 15px;
+    font-weight: 100;               /*Treure grosor*/
+    margin-top: 15px;
+    margin-left: 7px;
+}
+
+.card_tenda2 .card2_classificacio{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 7px;
+    color: #7c7c7c;
+}
+
+.card_tenda2 .card2_preu{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+
+.card2_gris300x300{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    background-color: rgb(237, 237, 237);
+    /*border-radius: 15px 15px 0px 0px;*/
+}
+
+.card2_text300x100{
+    width: 300px;
+    height: 85px;
+    position: relative;
+    /*border-radius: 0px 0px 15px 15px;*/
+}
+
+.bi-heart-fill{                                                                 /*Error del click*/
+    position: absolute;
+    z-index: 10;
+    left: 270px;
+    top: 10px;
+}
+
+.bi-heart-fill:hover{
+    color: red;
+}
+
+.card_tenda:hover{
+    border: 1px solid #7c7c7c;
+}
+
+.card2_tenda_shop{                                           /*FALTA CONFIGURAR*/
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+
+
+@media screen and (max-width: 1670px) {
+    .botiga_buscador {
+        width: auto;
+        height: auto;
+        align-items: center;
+        top: 0px;
+        margin-right: 0px;
+        transition: linear 1s;
+    }
+    .cards_botiga2{
+        transition: 0.5s linear;
+    }
+    .botiga_objc {
+        margin-top: 20px;
+        transition: 0.5s linear;
+    }
+
+    .botiga_buscador .linkcs {
+        margin-right: 0px;
+        width: auto;
+        height: auto;
+    }
+
+    .botiga_buscador .linkcs .linkc a {
+        margin: 5px 15px;
+    }
+
+    .botiga_buscador .linkcs .linkc {
+        margin-top: 0;
+    }
+
+    .botiga_buscador .linkcs .linkc a:hover{
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1395px) {
+    .botiga_objc {
+        width: 819px;
+    }
+    .card_tenda2 {
+        position: relative;
+        min-width: 200px;
+        /*min -> sinó dona error en les .card*/
+        min-height: 300px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+        /*per a totes les card*/
+        border-radius: 15px;
+        border: 1px solid #fff;
+    }
+    .card_tenda2 .bi-heart-fill {
+        left: 220px;
+    }
+    .card2_gris300x300 {
+        width: 250px;
+        height: 250px;
+    }
+    .card2_text300x100 {
+        width: 250px;
+        height: 100px;
+    }
+    .card2_tenda_shop {
+        width: 250px;
+        height: 250px;
+    }
+    .botiga_buscador .linkcs .linkc a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .botiga_objc {
+        width: 564px;
+    }
+    .botiga_xyz {
+        width: 75%;
+    }
+    .botiga_buscador {
+        width: 300px;
+        margin-top: 0px;
+    }
+    .botiga_buscador .linkcs .linkc a {
+        /*POSAR A centrada*/
+        margin: 5px 95px;
+        position: relative;
+        display: flex;
+        /*En linea*/
+        align-items: center;
+        /*Centrar items*/
+        transition: 1s linear;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .linkcs {
+        width: 100px;
+    }
+    .botiga_buscador .linkcs .linkc {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .botiga_buscador {
+        width: 300px;
+    }
+}
+
+/*@media screen and (max-width: 740px) {
+    .botiga_xyz {
+        width: 98%;
+    }
+}*/
+
+@media screen and (max-width: 800px) {
+    .botiga_objc {
+        width: 429px;
+    }
+    .buscador_botiga{
+        width: 400px;
+    }
+    .card_tenda2 {
+        position: relative;
+        min-width: 200px;
+        /*min -> sinó dona error en les .card*/
+        min-height: 300px;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: 20px;
+        /*per a totes les card*/
+        border-radius: 15px;
+        border: 1px solid #fff;
+    }
+
+    .card_tenda2 .bi-heart-fill {
+        left: 170px;
+    }
+
+    .card2_gris300x300 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card2_text300x100 {
+        width: 200px;
+        height: 100px;
+    }
+
+    .card2_tenda_shop {
+        width: 200px;
+        height: 200px;
+    }
+
+    .botiga_buscador .linkcs .linkc a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 568px) {              /*Ja esta error fet*/
+    .botiga_objc {
+        width: 215px;
+    }
+    .buscador_botiga{
+        width: 300px;
+    }
+}
+
+/*Falta posar mes petiti apartir de 560px*/
+
+/*************************************************************************************************************************************************************************************************************/
+/***********************************************************************************[ I T E M  S H O P ]******************************************************************************************************/
+/*************************************************************************************************************************************************************************************************************/
+
+.particio_item{
+    width: 100%;
+    height: auto;                 /*després auto*/
+    float: left;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;                    /*Necesita aixó per centrar*/                              
+    align-items: center;
+    /*border: 1px solid red;*/
+}
+
+.itemshop_75{
+    margin-top: 100px;
+    position: relative;
+    /*border: 1px solid blue;*/
+    float: left;
+    width: 1660px;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;                    /*Necesita aixó per centrar*/                              
+    align-items: center;
+}
+
+/******************************************************************/
+
+.grup_fotos_particio{
+    float: left;
+    width: 830px;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;                    /*Necesita aixó per centrar*/    
+    transition: 0.5s linear;                          
+}
+
+.foto1_grupfotos{
+    float: left;
+    width: 785px;
+    height: 785px;
+    object-fit: cover;
+    background-color: rgb(237, 237, 237);
+    margin: 0px 20px 20px 20px;
+    transition: 0.5s linear;
+}
+
+.foto2_grupfotos{
+    float: left;
+    width: 385px;
+    height: 385px;                                      /*Realment son 382.5 la partició*/
+    object-fit: cover;
+    background-color: rgb(237, 237, 237);
+    margin: 0px 10px 0px 20px;
+    transition: 0.5s linear;
+}
+
+.foto3_grupfotos{
+    float: left;
+    width: 385px;
+    height: 385px;
+    object-fit: cover;
+    background-color: rgb(237, 237, 237);
+    margin: 0px 20px 0px 10px;
+    transition: 0.5s linear;
+}
+
+/******************************************************************/
+
+.grup_text_particio{
+    float: left;
+    position: relative;
+    width: 830px;
+    height: 1200px;
+}
+
+.info_text_itemshop{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.info_text_itemshop .item_classificacio{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #7c7c7c;
+}
+
+.info_text_itemshop .item_preu{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.grup_text_particio h5{
+    font-size: 40px;
+    z-index: 300;
+    color: #000;
+}
+
+/******************************************************************/
+
+.info_mides_itemshop{           /*rectangle fixs*/
+    width: 100%;
+    height: 90px;
+    position: relative;
+    float: left;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text_infoshop p{
+    margin-top: 25px;
+    position: relative;
+    float: left;
+}
+
+.talla_itemshop{
+    margin: 15px 10px 0px 10px;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 237, 237);
+}
+
+.talla_itemshop_ocupat{
+    margin: 15px 10px 0px 10px;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 237, 237);
+    color: #b0b0b0;
+}
+
+.talla_itemshop:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.talla_itemshop_ocupat p{
+    font-size: 30px;
+    text-decoration: line-through;
+}
+
+.talla_itemshop p{
+    font-size: 30px;
+}
+
+.parti_itemshop{
+    margin: 50px 0px 0px 0px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+/******************************************************************/
+
+.comprar_itemshop{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    float: left;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.comprar_boto_itemshop{
+    width: 578px;                   /*rectangle fixs*/
+    height: 50px;
+    background: linear-gradient(to right, rgba(103, 215, 43, 0.634), rgba(12, 111, 20, 0.47));
+    color: #000;
+    border: none;
+}
+
+.comprar_boto_itemshop:hover{
+    background: linear-gradient(to right, rgba(73, 135, 40, 0.878), rgba(6, 41, 9, 0.829));
+    color: #fff;
+}
+
+/******************************************************************/
+
+.detalls_itemshop{
+    width: 100%;
+    margin-top: 5px;       /*10+15= a 25px*/
+    height: auto;
+    position: relative;
+    align-items: center;
+    float: left;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;            /*es centra be*/
+    align-items: center;
+    justify-content: center;
+}
+
+.detalls_detallitem1{                    /*rectangle fixs*/
+    width: 100%;
+    height: 50px;
+    margin: 25px 0px 0px 0px;
+    border-top: 1px solid #c5c5c5;              /*dal*/
+    border-bottom: 1px solid #c5c5c5;           /*abaix*/
+    align-items: center;
+    display: flex;
+}
+
+.detalls_detallitem1 p{                                                                                                   /*ns com left i right*/
+    position: relative;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.detalls_detallitem1 .bi-chevron-compact-down{
+    position: relative;
+    margin-right: 25px;
+    font-size: 20px;
+    padding-left: 550px;
+}
+
+.detalls_detallitem2{                    /*rectangle fixs*/
+    width: 100%;
+    height: 50px;
+    margin: 25px 0px 0px 0px;
+    border-top: 1px solid #c5c5c5;              /*dal*/
+    border-bottom: 1px solid #c5c5c5;           /*abaix*/
+    align-items: center;
+    display: flex;
+}
+
+.detalls_detallitem2 p{                                                                                                   /*ns com left i right*/
+    position: relative;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.detalls_detallitem2 .bi-chevron-compact-down{
+    position: relative;
+    margin-right: 25px;
+    font-size: 20px;
+    padding-left: 570px;
+}
+
+
+
+
+@media screen and (max-width: 1850px) {
+    .grup_fotos_particio{
+        height: 1045px;
+        width: 725px;
+    }
+    .foto1_grupfotos{
+        width: 685px;
+        height: 685px;
+    }
+    .foto2_grupfotos{
+        width: 332px;
+        height: 332px;
+    }
+    .foto3_grupfotos{
+        width: 332px;
+        height: 332px;
+    }
+    .grup_text_particio{
+        height: 1045px;
+        width: 685px;
+    }
+    .detalls_detallitem1 .bi-chevron-compact-down{
+        padding-left: 400px;                                                         /*???????????*/
+        margin-right: 25px;
+    }
+    .detalls_detallitem2 .bi-chevron-compact-down{
+        padding-left: 420px;                                                         /*???????????*/
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .grup_fotos_particio{
+        height: 890px;
+        width: 625px;
+    }
+    .foto1_grupfotos{
+        width: 585px;
+        height: 585px;
+    }
+    .foto2_grupfotos{
+        width: 280px;
+        height: 280px;
+    }
+    .foto3_grupfotos{
+        width: 280px;
+        height: 280px;
+    }
+    .grup_text_particio{
+        height: 890px;
+        width: 625px;
+    }
+    .detalls_detallitem1 .bi-chevron-compact-down{
+        padding-left: 350px;                                                         /*???????????*/
+        margin-right: 25px;
+    }
+    .detalls_detallitem2 .bi-chevron-compact-down{
+        padding-left: 370px;                                                         /*???????????*/
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .grup_fotos_particio{
+        width: 830px;
+        height: 1200px;
+    }
+    .foto1_grupfotos{
+        width: 785px;
+        height: 785px;
+    }
+    .foto2_grupfotos{
+        width: 385px;
+        height: 385px; 
+    }
+    .foto3_grupfotos{
+        width: 385px;
+        height: 385px; 
+    }
+    .grup_text_particio{
+        margin-top: 25px;
+        width: 789px;
+        height: 1200px;
+    }
+}
+
+
+/*************************************************************************************************************************************************************************************************************/
+/*****************************************************************************************[ C O M T E ]*******************************************************************************************************/
+/*************************************************************************************************************************************************************************************************************/
+
+.fondocompraedit{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.compte_body{
+    /*background: linear-gradient(rgba(67, 123, 188, 0.586) 70%, #fff);*/
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footer_compte{
+    height: 10vh;
+    width: 100%;
+    background-color: #b5b5b5;
+}
+
+.compte_emplenar h1{
+    font-size: 25px;
+}
+
+.bi-arrow-left-circle-fill{
+    position: left;
+    float: left;
+    text-align: center;
+    font-size: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #7c7c7c;
+}
+
+.compte_capsula{
+    position: relative;
+    border: 1px solid #b5b5b5;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.69);
+    width: 500px;
+    height: 620px;
+    align-items: center;
+    display: flex;
+    /*box-shadow: 5px 10px 50px 20px rgba(197, 197, 197, 0.485);*/
+}
+
+.compte_cuadres{
+    height: 30px;
+    width: 400px;
+    border-radius: 15px;
+    /*border: none;*/
+    border: 1px solid #000;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.compte_emplenar {
+    position: relative;
+    float: left;
+    margin: 0 auto;              
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    height: 520px;
+}
+
+.bi-arrow-left-circle{
+    font-size: 50px;
+    color: #000;
+}
+
+.emplenar{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid ;
+    width: 300px;
+    padding: 10px;
+    height: 5px;
+    margin-top: 20px;
+    margin-left: 1px;
+}
+
+.emplenar:focus{                /*Treure el border al fer clic*/
+    outline: none;
+}
+
+.registrarse{
+    background: linear-gradient(to right, rgba(103, 215, 43, 0.634), rgba(12, 111, 20, 0.47));
+    color: #000;
+    border: none;
+    padding: 10px;
+    width: 340px;
+    margin-top: 40px;
+}
+
+.registrarse:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.registrarse_google{
+    background: linear-gradient(to right, rgba(220, 51, 22, 0.634), rgba(224, 78, 30, 0.47));
+    color: #000;
+    border: none;
+    padding: 10px;
+    width: 340px;
+    margin-top: 20px;
+}
+
+.registrarse_google:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.registrarse_facebook{
+    background: linear-gradient(to right, rgba(24, 109, 219, 0.634), rgba(29, 162, 210, 0.47));
+    color: #000;
+    border: none;
+    padding: 10px;
+    width: 340px;
+    margin-top: 20px;
+}
+
+.registrarse_facebook:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.info_emplenar{
+    height: 400px;
+    width: 500px;
+    border: 1px solid red;
+}
+
+.compte_emplenar p{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.compte_emplenar h1 {
+    margin: 20px;
+    color: #000;
+    font-size: 30px;
+    /*-webkit-text-stroke: 2px #000;          Crear efecte de lletra sense fondo*/
+}
+
+.bi-arrow-left-circle{
+    color: #7c7c7c;
+    position: absolute;
+    z-index: 100;
+    top: 50px;
+    left: 50px;
+}
+
+.bi-arrow-left-circle:hover{
+    color: #000;
+}
+
+.compte_emplenar .bi-person-fill{               /*Selecionar sol aquesta ID*/
+    color: #000;
+    margin-right: 5px;
+}
+
+.compte_emplenar .bi-envelope-fill {
+    color: #000;
+    margin-right: 5px;
+}
+
+.compte_emplenar .bi-eye-slash-fill {
+    color: #000;
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .compte_capsula {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+
+/************************************************************/
+
+/*************************************************************************************************************************************************************************************************************/
+/*****************************************************************************************[ C A R R I T O ]***************************************************************************************************/
+/*************************************************************************************************************************************************************************************************************/
+
+.elements{
+        height: auto;
+        width: 100%;
+    float: left;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;                    /*Necesita aixó per centrar*/                              
+    align-items: center;
+    margin-top: 40px;
+}
+
+.elements_dins{
+        width: 75%;
+        height: auto;
+    /*border: 1px solid red;*/
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;                    /*Necesita aixó per centrar*/                              
+}
+
+/********************************************/
+
+.infocarrito{
+        height: 70px;
+    margin-left: 20px;
+    /*border: 1px solid green;*/
+}
+
+.infocarrito h1{
+    font-size: 30px;
+    margin-top: 10px;
+    transition: 0.3s linear; 
+}
+
+.infocarrito p{
+    font-size: 15px;
+    margin-top: 10px;
+    transition: 0.3s linear; 
+}
+
+/*****************/
+
+.productescar{
+        height: auto;
+        width: 600px;
+}
+
+.productecarrito_cuadre{
+        width: auto;
+        height: 200px;
+    border: 1px solid #b5b5b5;
+    margin-top: 20px;
+}
+
+.productecarrito_200x200{
+    float: left;
+    position: relative;
+    background-color: rgb(237, 237, 237);
+    width: 200px;
+    height: 200px;
+}
+
+.productecarrito_img{
+        width: 200px;
+        height: 200px;
+}
+
+.productecarrito_350x200{
+    float: left;
+    position: relative;
+        width: 350px;
+        height: 200px;
+}
+
+.productecarrito_350x200 h5{
+    font-size: 20px;
+    font-weight: 100;               /*Treure grosor*/
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.productecarrito_preuarticle{
+    position: absolute;
+    top: 130px;
+    left: 20px;
+        width: 100px;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+.productecarrito_quantitat{
+    position: absolute;
+    top: 130px;
+        width: 100px;
+        height: 29px;
+    text-align: center;
+    left: 150px;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+.productecarrito_350x200 p{
+    font-size: 15px;
+    color: #7c7c7c;
+    font-weight: 100;               /*Treure grosor*/
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.partiel1{
+    float: left;
+    position: relative;
+    width: 600px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    /*border: 1px solid blue;*/
+    transition: 0.5s linear; 
+
+}
+
+/********************************************/
+
+.partiel2{
+    top: 100px;                 /*keee???*/
+    width: 400px;
+    height: auto;
+    position: relative;
+    float: left;
+    margin: 0px 20px;
+}
+
+.partiel2_cuadre{
+    float: right;
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 230px;                                                          /*????????*/
+    border: 1px solid #c5c5c5;
+}
+
+.partiel2_cuadre2{
+    float: right;
+    position: relative;
+    float: left;
+    width: 400px;
+    margin-top: 20px;
+    height: 50px;                                                          /*????????*/
+    border: 1px solid #c5c5c5;
+}
+
+.partiel2_cuadre h1{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.partiel2_posicionament p{
+    float: right;
+    top: 20px;
+}
+
+.codigdescompte{
+    margin-top: 20px;
+    padding: 7px;
+    height: 40px;
+    width: 385px;
+    border: 1px solid #b5b5b5;
+}
+
+.partiel2_cuadre h3{
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: 100;
+}
+
+.descompte_base{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.formespagamentss{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.descompte{
+    width: 285px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.descompte_base button{
+    width: 300px;
+    margin-top: 20px;
+    background: linear-gradient(to right, rgba(103, 215, 43, 0.634), rgba(12, 111, 20, 0.47));
+    border: none;
+    color: #000;
+    padding: 5px;
+}
+
+.descompte_base button:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+@media screen and (max-width: 1400px) {
+    .partiel2_cuadre{
+        width: 600px;
+        margin-top: 20px;
+    }
+    .partiel2_cuadre2{
+        width: 600px;
+        margin-top: 20px;
+    }
+    .partiel2{
+        width: 600px;
+        top: 0px;
+    }
+    .descompte_base button{
+        width: 500px;
+    }
+    .codigdescompte{
+        width: 585px;
+    }
+    .formespagamentss{
+        width: 580px;
+        margin-top: 6px;
+        margin-left: 10px;
+    }
+}
+
+/*************************************************************************************************************************************************************************************************************/
+/**************************************************************************************[ E R R O R ]**********************************************************************************************************/
+/*************************************************************************************************************************************************************************************************************/
+
+.plantilla_tornar{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.plantilla_divtornar{
+    width: 1400px;
+    height: auto;
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+/*********************************/
+
+.mateniment_imatge_ov{
+    object-fit: cover;
+    position: relative;
+    float: left;
+    width: 700px;
+    height: 700px;
+    transition: 1s linear
+}
+
+.manteniment_text_ov{
+    width: 700px;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    float: left;
+    position: relative;
+    transition: 1s linear
+}
+
+.centar_text_ov h1{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.centar_text_ov h3{
+    font-size: 40px;
+    text-align: center;
+    -webkit-text-stroke: 2px #fff;
+    color: #000;
+}
+
+.centrar_div_be_tornar_2{
+    text-decoration: none;
+}
+
+.centrar_div_be_tornar{
+    align-items: center;
+    width: 200px;
+}
+
+.centar_text_ov h2{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    color: #000;
+    padding: 10px;
+    background: linear-gradient(to right, rgba(110, 255, 32, 0.812), rgba(21, 102, 27, 0.812));
+}
+
+.centar_text_ov h2:hover{
+    background: linear-gradient(to right, rgba(110, 255, 32, 0.511), rgba(21, 102, 26, 0.478));
+    color: #fff;
+}
+
+/*@media screen and (max-width: 1400px) {           truco
+    .plantilla_divtornar{
+        width: 700px;
+    }
+    .manteniment_text_ov{
+        height: 400px;
+        margin-top: 50px;
+    }
+    .mateniment_imatge_ov{          
+        width: 650px;
+        height: 650px;
+    }
+    .plantilla_tornar{
+        height: auto;              
+    }
+}*/
+
+@media screen and (max-width: 1400px) {
+    .plantilla_tornar{
+        height: 100vh;              /*Molt bon responsive pa*/
+    }
+    .plantilla_divtornar{
+        width: 500px;
+    }
+    .manteniment_text_ov{
+        width: 500px;
+        height: 400px;
+    }
+    .centar_text_ov{
+        width: 500px;
+    }
+    .centar_text_ov h1{
+        font-size: 35px;
+    }
+    .centar_text_ov h3{
+        font-size: 35px;
+    }
+    .centrar_div_be_tornar_2{
+        width: 90%;
+    }
+    .mateniment_imatge_ov{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+/*************************************************************************************************************************************************************************************************************/
+/********************************************************************************[ N O V E T A T S ]**********************************************************************************************************/
+/*************************************************************************************************************************************************************************************************************/
+
+.text_novetats_100p{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;                    /*Necesita aixó per centrar*/                              
+    align-items: center;
+}
+
+.text_novetats75p{
+    position: relative;
+    /*border: 1px solid red;*/
+    float: left;
+    width: 1650px;
+    height: auto;
+}
+
+.text_novetats75p h1{
+    margin-top: 5px;
+}
+
+.text_novetats75p p{
+    margin-top: 10px;
+}
+
+.centrar_nove{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;                    /*Necesita aixó per centrar*/                              
+    align-items: center;
+}
+
+@media screen and (max-width: 1768px){ 
+    .text_novetats_100p{
+        width: 820px;           /*exactes*/
+    }
+}
+
+@media screen and (max-width: 950px){ 
+    .text_novetats_100p{
+        width: 400px;
+    }
+}
